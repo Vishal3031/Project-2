@@ -1,0 +1,269 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variable  */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar: logo and image  */
+#logo img{
+    margin: 5px 22px;
+    width: 59px;
+    height: 59px;
+}
+/* navigation bar: logo image  */
+#logo{
+    margin: 1px 1px; 
+}
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* navigation bar: list styling  */
+#navbar ul{
+    display: flex;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* using pseudo selectors  */
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem ;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(4, 4, 4);
+    background-color: white;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    padding: 3px 170px;
+    align-items: center;
+    justify-content: center;
+    /* color: white;  */
+}
+
+#home::before{
+    content:"";
+    background: url('vihaan.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 400px; 
+    width: 100%; 
+    z-index: -1;
+    opacity: 1;
+}
+
+/* utility classes  */
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    /* font-family: 'Fredoka One', cursive;  */
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.h-primary{
+    font-size: 2.2rem; 
+    padding: 12px;
+    /* color: rgb(1, 1, 1); */
+}
+
+#vishal{
+    color: black;
+}
+
+.h-secondary{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem; 
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+
+}
+
+.btn{
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: #0a0a0a;
+    margin: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(173, 173, 173);
+}
+
+/* services classes*/
+
+#services{
+    margin: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box{
+    border: 2px solid rgb(183, 18, 18);
+    padding: 23px;
+    margin: 5px;
+    border-radius: 18px;
+    background-color: rgb(228 228 228);
+}
+
+#services .box img{
+    height: 154px;
+    display: block;
+    margin: auto;
+}
+
+/* client section  */
+#client-section{
+    height: 300px; 
+    position: relative;
+}
+
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url('background.jpeg');
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#bishu{
+    color: black;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img{
+    height: 70px;
+}
+
+.client-item{
+    padding: 28px;
+    margin: 2px 7px;
+}
+
+/* contact us  */
+
+
+#vish{
+    color: black;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    /* top: 0px;  */
+    background: url('okk.o.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+}
+    
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+
+.submit{
+    width: 100px;
+    border-radius: 6px;
+    background-color: rgb(144 145 152);
+    padding: 4px;
+    font-family: 'Fredoka One', cursive;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: white;
+}
+
+
+
+/* footer  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 7px 20px;
+}
+
+
